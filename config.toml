@@ -1,0 +1,52 @@
+# ==============================================================
+#  Market Advisor settings
+#  Edit on GitHub: open this file, click the pencil, change a value,
+#  click "Commit changes". The next run picks it up.
+# ==============================================================
+
+benchmark = "SPY"
+data_feed = "sip"             # "sip" (all US exchanges, 15+ min old) or "iex"
+news_days = 3                 # how many days of news to consider
+max_long_picks = 8            # how many long-term stock ideas to show
+max_short_picks = 4           # how many short-term crypto ideas to show
+ai_provider = "auto"          # "auto" | "github" | "anthropic" | "none"
+ai_model_github = "openai/gpt-4.1"
+ai_model_anthropic = "claude-sonnet-4-5"
+
+# ---------------------------------------------------------------
+# LONG-TERM STOCKS: ideas meant to be held for months
+# ---------------------------------------------------------------
+[long]
+ma_fast = 50
+ma_slow = 200
+rsi_period = 14
+atr_period = 14
+stop_pct = 12.0               # suggested stop-loss below entry
+target_pct = 0                # 0 = no fixed target, let winners run
+symbols = [
+  # Defence and aerospace
+  "LMT", "RTX", "NOC", "GD", "LHX", "HII", "LDOS", "ITA", "SHLD", "EUAD",
+  # Energy (oil above $100 with the Gulf conflict)
+  "XOM", "CVX", "COP", "VLO", "MPC", "PSX", "SLB",
+  # Big technology and AI infrastructure
+  "AAPL", "MSFT", "GOOGL", "AMZN", "META", "NVDA", "AVGO", "ORCL",
+  # Financials
+  "JPM", "GS", "V", "BAC",
+  # Healthcare
+  "JNJ", "UNH", "LLY", "ABBV",
+  # Consumer and industrials
+  "COST", "WMT", "PG", "KO", "CAT", "HON", "GE", "DE",
+]
+
+# ---------------------------------------------------------------
+# SHORT-TERM CRYPTO: quick trades, days not months. Trades 24/7.
+# ---------------------------------------------------------------
+[short]
+ma_fast = 10
+ma_slow = 30
+rsi_period = 14
+atr_period = 14
+stop_pct = 4.0                # suggested stop-loss below entry
+target_pct = 6.0              # suggested profit target
+max_hold_days = 10
+symbols = ["BTC/USD", "ETH/USD", "SOL/USD", "XRP/USD", "LINK/USD", "AVAX/USD", "LTC/USD", "DOGE/USD"]

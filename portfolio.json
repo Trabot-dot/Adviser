@@ -1,0 +1,6 @@
+{
+  "_help": "Your holdings, so the advisor can watch them and alert you. Edit this file on GitHub (pencil icon), then Commit changes. sleeve is 'long' (stocks, months) or 'short' (crypto, days). entry_price is what you paid per share/coin. stop_pct and target_pct are optional and override the defaults in config.toml.",
+  "holdings": [
+    {"symbol": "RTX", "sleeve": "long", "qty": 10, "entry_price": 0, "entry_date": "2026-09-15", "note": "example: set entry_price to what you paid, or delete this line"}
+  ]
+}

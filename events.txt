@@ -1,0 +1,5 @@
+# One line per upcoming event the advisor should keep in mind. Edit on GitHub. Lines starting with # are ignored.
+2026-09-16 Fed rate decision 2pm ET: a 25bp HIKE to 3.75-4.00% is ~93% priced in (first hike since 2023)
+2026-09-14 Chip sell-off after AI leaders called for a slowdown in model development (NVDA -3%, AMD/INTC/MRVL -5-7%); hyperscalers MSFT/GOOGL/META rose
+US-Iran conflict in its seventh month: Strait of Hormuz constrained, WTI oil above $100; Hormuz talks in Muscat this week
+Crypto: BTC ~$77k, ETH ~$2,480, both +25-35% over the past month but sliding into the Fed meeting; SOL near $100 resistance
